@@ -15,6 +15,11 @@
 		"prepare": "husky",
 		"commit": "cz"
 	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
