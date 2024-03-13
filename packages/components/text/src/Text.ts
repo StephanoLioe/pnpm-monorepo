@@ -2,7 +2,7 @@
 import { html } from 'lit'
 import { unsafeHTML } from 'lit/directives/unsafe-html.js'
 
-import './styles/text.css'
+import './text.css'
 
 /**
  * Primary UI component for text

@@ -2,7 +2,7 @@ import { html } from 'lit'
 import { styleMap } from 'lit/directives/style-map.js'
 import './button.css'
 
-type ButtonProps = {
+export type ButtonProps = {
   primary?: boolean
   backgroundColor?: string | null
   size?: 'small' | 'medium' | 'large'

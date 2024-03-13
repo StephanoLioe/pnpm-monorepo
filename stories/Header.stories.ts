@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/web-components';
-import { fn } from '@storybook/test';
-import type { HeaderProps } from './Header';
-import { Header } from './Header';
+import type { Meta, StoryObj } from '@storybook/web-components'
+import { fn } from '@storybook/test'
+import type { HeaderProps } from './Header'
+import { Header } from './Header'
 
 const meta = {
   title: 'Example/Header',
@@ -13,10 +13,10 @@ const meta = {
     onLogout: fn(),
     onCreateAccount: fn(),
   },
-} satisfies Meta<HeaderProps>;
+} as Meta<HeaderProps>
 
-export default meta;
-type Story = StoryObj<HeaderProps>;
+export default meta
+type Story = StoryObj<HeaderProps>
 
 export const LoggedIn: Story = {
   args: {
@@ -24,6 +24,6 @@ export const LoggedIn: Story = {
       name: 'Jane Doe',
     },
   },
-};
+}
 
-export const LoggedOut: Story = {};
+export const LoggedOut: Story = {}
