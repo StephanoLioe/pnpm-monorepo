@@ -2,6 +2,14 @@ import { html } from 'lit'
 import { styleMap } from 'lit/directives/style-map.js'
 import './button.css'
 
+type ButtonProps = {
+  primary?: boolean
+  backgroundColor?: string | null
+  size?: 'small' | 'medium' | 'large'
+  label: string
+  onClick: () => void
+}
+
 /**
  * Primary UI component for user interaction
  */
@@ -11,7 +19,7 @@ export const Button = ({
   size,
   label,
   onClick,
-}) => {
+}: ButtonProps) => {
   const mode = primary
     ? 'storybook-button--primary'
     : 'storybook-button--secondary'
