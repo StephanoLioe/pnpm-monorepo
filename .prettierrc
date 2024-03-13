@@ -1,4 +1,18 @@
 {
-    "semi": false,
-    "singleQuote": true
+	"useTabs": true,
+	"semi": false,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"importOrder": [
+		"^lit/?(.*)$",
+		"<THIRD_PARTY_MODULES>",
+		"^@pnpm-monorepo/(.*)$",
+		"^../(.*)$",
+		"^./(?!styles/(.*)$)",
+		"^\\./styles/(.*)$"
+	],
+	"proseWrap": "preserve",
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
