@@ -1,13 +1,29 @@
 import { html } from 'lit'
 import { styleMap } from 'lit/directives/style-map.js'
 import './button.css'
+import { defaultLabel } from '@pnpm-monorepo/logger'
 
-export type ButtonProps = {
+export interface ButtonProps {
+  /**
+   * Is this the principal call to action on the page?
+   */
   primary?: boolean
-  backgroundColor?: string | null
+  /**
+   * What background color to use
+   */
+  backgroundColor?: string
+  /**
+   * How large should the button be?
+   */
   size?: 'small' | 'medium' | 'large'
+  /**
+   * Button contents
+   */
   label: string
-  onClick: () => void
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void
 }
 
 /**
@@ -15,7 +31,7 @@ export type ButtonProps = {
  */
 export const Button = ({
   primary,
-  backgroundColor = null,
+  backgroundColor,
   size,
   label,
   onClick,
@@ -35,7 +51,7 @@ export const Button = ({
       style=${styleMap({ backgroundColor })}
       @click=${onClick}
     >
-      ${label}
+      ${label} ${defaultLabel}
     </button>
   `
 }

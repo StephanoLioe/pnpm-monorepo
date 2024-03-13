@@ -7,7 +7,7 @@
     "lint:ts": "eslint --fix packages/**/*.ts",
     "format:fix": "prettier --write \"**/*.{css,ts,js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "keywords": [],
@@ -28,6 +28,9 @@
     "prettier": "3.2.5",
     "storybook": "^8.0.0",
     "typescript": "^5.4.2",
-    "typescript-eslint": "^7.2.0"
-  }
+    "typescript-eslint": "^7.2.0",
+    "@changesets/cli": "^2.27.1",
+    "@manypkg/cli": "^0.21.2"
+  },
+  "dependencies": {}
 }
