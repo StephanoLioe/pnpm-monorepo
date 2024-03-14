@@ -1,55 +1,61 @@
 {
-	"name": "pnpm-monorepo",
-	"version": "1.0.0",
-	"description": "",
-	"repository": {
-		"url": "https://github.com/stephanolioe/pnpm-monorepo.git",
-		"type": "git"
-	},
-	"scripts": {
-		"dev": "storybook dev -p 6006",
-		"build-storybook": "storybook build",
-		"lint:ts": "eslint --fix packages/**/*.ts",
-		"lint:css": "stylelint --fix 'packages/**/*.css'",
-		"format:check": "prettier --write \"**/*.{css,ts,js}\"",
-		"format:fix": "prettier --write \"**/*.{css,ts,js}\"",
-		"manypkg:check": "manypkg check",
-		"manypkg:fix": "manypkg fix",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky",
-		"commit": "cz"
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"@changesets/cli": "^2.27.1",
-		"@chromatic-com/storybook": "^1.2.18",
-		"@manypkg/cli": "^0.21.2",
-		"@storybook/addon-essentials": "^8.0.0",
-		"@storybook/addon-links": "^8.0.0",
-		"@storybook/blocks": "^8.0.0",
-		"@storybook/test": "^8.0.0",
-		"@storybook/web-components": "^8.0.0",
-		"@storybook/web-components-vite": "^8.0.0",
-		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
-		"commitizen": "^4.3.0",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-storybook": "^0.8.0",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
-		"lit": "^3.1.2",
-		"prettier": "3.2.5",
-		"storybook": "^8.0.0",
-		"stylelint": "^16.2.1",
-		"stylelint-config-standard": "^36.0.0",
-		"typescript": "^5.4.2",
-		"typescript-eslint": "^7.2.0"
-	}
+  "name": "pnpm-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "url": "git+https://github.com/stephanolioe/pnpm-monorepo.git",
+    "type": "git"
+  },
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint:ts": "eslint --fix packages/**/*.ts",
+    "lint:css": "stylelint --fix 'packages/**/*.css'",
+    "format:check": "prettier --write \"**/*.{css,ts,js}\"",
+    "format:fix": "prettier --write \"**/*.{css,ts,js}\"",
+    "manypkg:check": "manypkg check",
+    "manypkg:fix": "manypkg fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "commit": "cz",
+    "chromatic": "npx chromatic --project-token=chpt_a0ddb7321c5b93f"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@chromatic-com/storybook": "^1.2.18",
+    "@manypkg/cli": "^0.21.2",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/test": "^8.0.0",
+    "@storybook/web-components": "^8.0.0",
+    "@storybook/web-components-vite": "^8.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "chromatic": "^11.0.8",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "lit": "^3.1.2",
+    "prettier": "3.2.5",
+    "storybook": "^8.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.4.2",
+    "typescript-eslint": "^7.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/stephanolioe/pnpm-monorepo/issues"
+  },
+  "homepage": "https://github.com/stephanolioe/pnpm-monorepo#readme"
 }
