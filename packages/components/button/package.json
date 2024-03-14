@@ -1,21 +1,22 @@
 {
-  "name": "@pnpm-monorepo/button",
-  "version": "2.0.0",
-  "description": "",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@pnpm-monorepo/logger": "1.1.0",
-    "lit": "^3.1.2"
-  },
-  "devDependencies": {
-    "@storybook/test": "^8.0.0",
-    "@storybook/web-components": "^8.0.0"
-  }
+	"name": "@pnpm-monorepo/button",
+	"version": "2.0.0",
+	"description": "",
+	"repository": "git://github.com/stephanolioe/pnpm-monorepo.git",
+	"main": "src/index.ts",
+	"module": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@pnpm-monorepo/logger": "1.1.0",
+		"lit": "^3.1.2"
+	},
+	"devDependencies": {
+		"@storybook/test": "^8.0.0",
+		"@storybook/web-components": "^8.0.0"
+	}
 }

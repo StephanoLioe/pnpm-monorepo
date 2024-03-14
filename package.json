@@ -1,7 +1,12 @@
 {
 	"name": "pnpm-monorepo",
+	"private": true,
 	"version": "1.0.0",
 	"description": "",
+	"repository": {
+		"url": "https://github.com/stephanolioe/pnpm-monorepo.git",
+		"type": "git"
+	},
 	"scripts": {
 		"dev": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
